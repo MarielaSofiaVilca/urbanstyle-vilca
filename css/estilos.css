@@ -223,12 +223,30 @@ button {
     }
 
     .promociones__container-img {
-        width: 360px;
-        height: 320px;
+        width: 500px;
+        height: 450px;
     }
 
     /*Calzado*/
+    .calzado__container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 12, 1fr;
+    }
+
+    .calzado__container-img {
+        width: 500px;
+        height: 450px;
+    }
+
     /*Kids*/
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-img {
+        width: 500px;
+    }
 
     /*Contacto*/
 
