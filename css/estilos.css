@@ -89,6 +89,13 @@ nav ul li a {
 
 button {
     display: flex;
+    transition: all 2s;
+}
+
+button:hover {
+    color:burlywood;
+    height: 20px;
+    background-color: black;
 }
 
 .section__info {
