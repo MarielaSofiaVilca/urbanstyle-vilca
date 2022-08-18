@@ -19,11 +19,27 @@ body {
 
 }
 
-header {
+/*header {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+}*/
+
+.navbar {
+    background-color: #10201d;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: bisque;
+}
+
+.navbar-collapse {
+    flex-grow: initial;
+}
+
+.navbar-toggler-icon {
+    background-color: bisque;
 }
 
 .logo {
@@ -51,7 +67,7 @@ nav ul li a {
 
 }
 
-.titulos {
+.titulos-generales {
     font-family: 'Bebas Neue',sans-serif;
     font-size: 80px;
     letter-spacing: 2px;
@@ -94,7 +110,7 @@ button {
 
 button:hover {
     color:burlywood;
-    height: 20px;
+    height: 30px;
     background-color: black;
 }
 
