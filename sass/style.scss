@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Oswald:wght@200&display=swap');
+
+/*Font*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body index*/
+
+body {
+    background-image: url(../assets/img/imgdefondo.jpg);
+    background-color: #ebe6ea;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5px;
+
+}
+
+.navbar {
+    background-color: #10201d;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffe4c4;
+}
+
+.navbar-collapse {
+    flex-grow: initial;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffe4c4;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav {
+    height: 100%;
+}
+
+ul {
+    margin: 5px;
+    padding: 5px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li a {
+    list-style-type: disc;
+    padding: 5px 10px;
+    color: #ffe4c4;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.titulos-generales {
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #faebd7;
+}
+
+.section {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    background-color: #c8ad8d;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.img {
+    width: 100%;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+@mixin img-size($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+.grid__container-img {
+    @include img-size(500px, 500px);
+}
+
+button {
+    display: flex;
+    transition: all 2s;
+}
+
+button:hover {
+    color:#deb887;
+    height: 30px;
+    background-color: black;
+}
+
+.section__info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px;
+    border: 5px solid #000000;
+
+    background-image: linear-gradient( 90.5deg,  #ffcf8b80 1.1%, #ffcf8b 81.3% );
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    padding: 30px;
+    border: 5px solid #c8ad8d;
+    border-style: double;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #ebe6ea;
+}
+
+/*Promociones*/
+
+.promociones__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.promociones__container-img {
+    width: 380px;
+    height: 380px;
+}
+
+/*Calzado*/
+
+.calzado__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.calzado__container-img {
+    width: 380px;
+    height: 380px;
+}
+
+/*Kids*/
+
+.img-portada {
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+.flex-img {
+    width: 400px;
+    height: 350px;
+}
+
+/*Contacto*/
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    color: #c8ad8d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid #c8ad8d;
+    border-style: double;
+    font-weight: bold;
+}
+
+.form-contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin: 10px
+}
+
+/*Media queries*/
+
+@media screen and (min-width:320px) and (max-width:576px) {
+
+    /*Index*/
+    header {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+    }
+
+    .grid__container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .grid__container-img {
+        width: 500px;
+        height: 500px;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    /*Promociones*/
+
+    .promociones__container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .promociones__container-img {
+        width: 500px;
+        height: 450px;
+    }
+
+    /*Calzado*/
+    .calzado__container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 12, 1fr;
+    }
+
+    .calzado__container-img {
+        width: 500px;
+        height: 450px;
+    }
+
+    /*Kids*/
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-img {
+        width: 500px;
+    }
+
+    /*Contacto*/
+
+    .formulario {
+        flex-wrap: nowrap;
+    }
+
+    }
