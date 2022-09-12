@@ -7,10 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Tienda de indumentaria y calzado. Al mejor precio y calidad. Nueva colección. Envíos a todo el país">
     <meta name="keywords" content="ropa de mujer, ropa hombre, ropa online, ropa de moda, calzados, tiendas de ropa online argentina, camperas, campera de cuero, botas vaqueras">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
@@ -63,7 +60,39 @@
             </article>
         </section>
 
-        <img class="img" src="./assets/img/camperasportada.jpg" alt="Camperas" />
+        <div class="container mt-4">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/camperasportada.jpg" class="d-block w-100" alt="jb-1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/portada.jpg" class="d-block w-100" alt="jb-2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/portada1.jpg" class="d-block w-100" alt="jb-3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
 
         <h2 class="titulos-generales">Nueva colección</h2>
 
@@ -114,32 +143,36 @@
                     <div class="card-body">
                         <h5 class="card-title">Campera Forest</h5>
                         <p class="card-text">
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            Campera de abrigo con capucha, cierre frontal, bolsillos laterales con cierre, forro en
+                            poliéster y relleno de guata siliconada.
+                            Talles S, M, L, XL
                         </p>
                         <a href="#" class="btn btn-outline-success">Agregar al carrito</a>
                     </div>
                 </div>
 
                 <div class="card col-sm-12 col-md-6 col-lg-4">
-                    <img src="./assets/img/camperacuero.jpg" class="card-img-top" alt="campera-cuero" />
+                    <img src="./assets/img/camperacuero.jpg" class="card-img-top" alt="campera-cuero-hombre" />
                     <div class="card-body">
                         <h5 class="card-title">Campera Rock</h5>
                         <p class="card-text">
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            Campera de cuero sintético. 100% poliuretano. Detalle bolsillos con cierres metálicos.
+                            Broches a presión en cuello.
+                            Talles S, M, L
                         </p>
                         <a href="#" class="btn btn-outline-success">Agregar al carrito</a>
                     </div>
                 </div>
 
                 <div class="card col-sm-12 col-md-6 col-lg-4">
-                    <img src="./assets/img/camperacuerolarga.jpg" class="card-img-top" alt="campera-cuero-larga" />
+                    <img src="./assets/img/camperacuerolarga.jpg" class="card-img-top"
+                        alt="campera-cuero-larga-mujer" />
                     <div class="card-body">
                         <h5 class="card-title">Campera Rockin</h5>
                         <p class="card-text">
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            Campera de cuero ecológico larga con cuello en v. Posee botones y cinto. Bolsillos laterales
+                            e internos.
+                            Talles S, M, L
                         </p>
                         <a href="#" class="btn btn-outline-success">Agregar al carrito</a>
                     </div>
@@ -150,8 +183,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Vaqueras Vintage</h5>
                         <p class="card-text">
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            Vaqueras con caña media alta y bordadas a tono. Con taco bajo, permite más comodidad.
+                            Talles 36 al 40
                         </p>
                         <a href="#" class="btn btn-outline-success">Agregar al carrito</a>
                     </div>
@@ -162,8 +195,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Vaqueras Perla</h5>
                         <p class="card-text">
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            Vaqueras con caña más alta, con detalles de perlas, con interior de corderito. Taco medio.
+                            Talle 37 al 42
                         </p>
                         <a href="#" class="btn btn-outline-success">Agregar al carrito</a>
                     </div>
@@ -172,10 +205,10 @@
                 <div class="card col-sm-12 col-md-6 col-lg-4">
                     <img src="./assets/img/vaqueras-3.jpg" class="card-img-top" alt="vaqueras-3" />
                     <div class="card-body">
-                        <h5 class="card-title">Vaqueras Clara</h5>
+                        <h5 class="card-title">Vaqueras Texas</h5>
                         <p class="card-text">
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            Botas altas texanas claras de gamuza, con taco medio. Bordados y cierres en laterales.
+                            Talles 36 al 40
                         </p>
                         <a href="#" class="btn btn-outline-success">Agregar al carrito</a>
                     </div>
