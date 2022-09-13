@@ -31,23 +31,21 @@ body {
 
 nav {
   height: 100%; }
-
-ul {
-  margin: 5px;
-  padding: 5px;
-  list-style-type: none;
-  display: flex; }
-
-nav ul li a {
-  list-style-type: disc;
-  padding: 5px 10px;
-  color: #ffe4c4;
-  text-decoration: none;
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif; }
+  nav ul {
+    margin: 5px;
+    padding: 5px;
+    list-style-type: none;
+    display: flex; }
+  nav li a {
+    list-style-type: disc;
+    padding: 5px 10px;
+    color: #ffe4c4;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif; }
 
 .titulos-generales {
-  font-family: 'Bebas Neue',sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 80px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -65,6 +63,9 @@ nav ul li a {
 .img {
   width: 100%; }
 
+.card {
+  background-color: #e2e2e2; }
+
 .grid__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -77,13 +78,12 @@ nav ul li a {
   height: 500px;
   width: 500px; }
 
-button {
+.btn-outline-dark {
+  border-color: #212529;
   display: flex;
-  transition: all 2s; }
-
-button:hover {
+  transition: all 2s;
   color: #deb887;
-  height: 30px;
+  height: 40px;
   background-color: black; }
 
 .section__info {
@@ -106,7 +106,8 @@ button:hover {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  color: #ebe6ea; }
+  color: #ebe6ea;
+  background-color: #10201d; }
 
 /*Promociones*/
 .promociones__container {

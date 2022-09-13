@@ -48,7 +48,7 @@
 
         <h2 class="titulos-generales">Contactanos</h2>
 
-        <form class="formulario">
+        <!-- <form class="formulario">
             <div class="form-contenido">
                 <label for="nombre_apellido">Nombre y Apellido:</label>
                 <input type="text" name="Nombre y Apellido" placeholder="Escriba aquí su nombre">
@@ -68,7 +68,44 @@
                 <button class="btn">Enviar formulario</button>
                 <button class="btn">Limpiar formulario</button>
             </div>
-        </form>
+        </form> -->
+
+        <div class="container mt-3">
+            <h3>Realizá tu consulta</h3>
+
+            <form action="">
+                <p>
+                    <label for="nombre-completo">Nombre completo</label>
+                    <input class="form-control" type="text" name="nombre-completo" />
+                </p>
+
+                <p>
+                    <label for="correo">Correo Electrónico</label>
+                    <input class="form-control" type="email" name="correo" />
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono</label>
+                    <input class="form-control" type="tel" name="telefono" />
+                </p>
+
+                <p>
+                    <label for="asunto">Asunto</label>
+                    <input class="form-control" type="text" name="asunto" />
+                </p>
+
+                <p class="bloque">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" name="mensaje" rows="3"></textarea>
+                </p>
+
+                <p class="bloque">
+                    <button type="submit" class="btn btn-outline-primary">
+                        Enviar
+                    </button>
+                </p>
+            </form>
+        </div>
 
     </main>
 
